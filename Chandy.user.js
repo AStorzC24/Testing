@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Chandy
 // @namespace    Chandy
-// @version      0.1
+// @version      0.2
 // @description  Secret
 // @author       You
 // @match        https://kempkens-juweliere.de/*
