@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Chandy
 // @namespace    Chandy
-// @version      0.2
+// @version      0.3
 // @description  Secret
 // @author       You
 // @match        https://kempkens-juweliere.de/*
+// @download https://github.com/AStorzC24/Testing/raw/main/Chandy.user.js
+// @update https://github.com/AStorzC24/Testing/raw/main/Chandy.user.js
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -66,7 +68,7 @@
  </ul>
 </form>`
      }
-        if (window.location.href.indexOf("") > -1){
+        if (window.location.href.indexOf("notdefined") > -1){
          element.innerHTML = `
     <div>'Suche' die Sportart, die wir auf Teneriffa gemacht haben</div>
     <form action="/3990" method="post">
