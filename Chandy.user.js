@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Chandy
 // @namespace    Chandy
-// @version      0.3
+// @version      1.0
 // @description  Secret
 // @author       You
 // @match        https://kempkens-juweliere.de/*
@@ -17,9 +17,9 @@
     x.setAttribute("type", "text");
     var element = document.querySelector('* > main > div > div')
 
-    if (window.location.href.indexOf("start") > -1){
+    if (window.location.href.indexOf("/Kapitel-0") > -1){
     element.innerHTML = `
-    <form action="/kapitel-1" method="post">
+    <form action="/Kapitel-1" method="post">
  <ul>
   <li>
     <label for="name">Name:</label>
@@ -32,14 +32,14 @@
  </ul>
 </form>`
     }
-     if (window.location.href.indexOf("kapitel-1") > -1){
+     if (window.location.href.indexOf("/Kapitel-1") > -1){
          element.innerHTML = `
     <div>"Sag Freund und tritt ein"</div>
     <form action="/kapitel-321" method="post">
  <ul>
   <li>
     <label for="name">Antwort:</label>
-    <input type="text" id="name" name="Antwort" required pattern="3667">
+    <input type="text" id="name" name="Antwort" required pattern="3652">
   </li>
 
   <li class="button">
@@ -48,18 +48,18 @@
  </ul>
 </form>`
      }
-             if (window.location.href.indexOf("kapitel-2") > -1){
+             if (window.location.href.indexOf("/Kapitel-2") > -1){
          element.innerHTML = `
     <div>Wirklich Charly? Also so einfach wird das hier nicht...</div>`
      }
-         if (window.location.href.indexOf("kapitel-321") > -1){
+         if (window.location.href.indexOf("/kapitel-321") > -1){
          element.innerHTML = `
-    <div>"3667" führt zu welcher Zahl in der unheimlichen Villa? Hinweis: Roter </div>
-    <form action="/kapitel-321" method="post">
+    <div>Glückwunsch, du hast einen Besuch in der unheimlichen Villa gewonnen!</div>
+    <form action="/kapitel-sport" method="post">
  <ul>
   <li>
     <label for="name">Antwort:</label>
-    <input type="text" id="name" name="user_name" required pattern="">
+    <input type="text" id="name" name="user_name" required pattern="2">
   </li>
 
   <li class="button">
@@ -68,14 +68,30 @@
  </ul>
 </form>`
      }
-        if (window.location.href.indexOf("notdefined") > -1){
+            if (window.location.href.indexOf("/kapitel-sport") > -1){
+         element.innerHTML = `
+    <div>Welche Sportart haben wir vor unserem ersten Kuss gemacht?</div>
+    <form action="/daswartoll" method="post">
+ <ul>
+  <li>
+    <label for="name">Antwort:</label>
+    <input type="text" id="name" name="user_name" required pattern="[Bb]adminton">
+  </li>
+
+  <li class="button">
+    <button type="submit">Sicher?</button>
+  </li>
+ </ul>
+</form>`
+     }
+        if (window.location.href.indexOf("/daswartoll") > -1){
          element.innerHTML = `
     <div>'Suche' die Sportart, die wir auf Teneriffa gemacht haben</div>
     <form action="/3990" method="post">
  <ul>
   <li>
     <label for="name">Antwort:</label>
-    <input type="text" id="name" name="user_name" required pattern="3667">
+    <input type="text" id="name" name="user_name" required pattern="1194">
   </li>
 
   <li class="button">
@@ -86,12 +102,12 @@
      }
             if (window.location.href.indexOf("3990") > -1){
          element.innerHTML = `
-    <div>Und, welches Jahr hast du gefunden?</div>
-    <form action="/kapitel-1900" method="post">
+    <div>Wie ist die Hausnummer unseres gemeinsamen Hauses?</div>
+    <form action="/erst-der-Anfang" method="post">
  <ul>
   <li>
     <label for="name">Antwort:</label>
-    <input type="text" id="name" name="user_name" required pattern="">
+    <input type="text" id="name" name="user_name" required pattern="11">
   </li>
 
   <li class="button">
@@ -99,6 +115,10 @@
   </li>
  </ul>
 </form>`
+     }
+                if (window.location.href.indexOf("erst-der-Anfang") > -1){
+         element.innerHTML = `
+    <div>Nimm die Quersumme und schaue dir den Tag an, viel Erfolg!</div>`
      }
 })();
 
