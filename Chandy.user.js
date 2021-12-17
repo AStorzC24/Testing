@@ -118,7 +118,7 @@
      }
                 if (window.location.href.indexOf("erst-der-Anfang") > -1){
          element.innerHTML = `
-    <div>Nimm die Quersumme und schaue dir den Tag an, viel Erfolg!</div>`
+    <div>Nimm die Quersumme, erhöhe um 1 und schaue dir den Tag an, viel Erfolg!</div>`
      }
 })();
 
